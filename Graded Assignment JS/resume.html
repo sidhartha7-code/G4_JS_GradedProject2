@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume Page</title>
+    <link rel="stylesheet" href="./resume.css">
+    
+</head>
+<body>
+    <center>
+       
+        <input type="text" class="search-box" name="searchbox" placeholder="search for keywords to filter the resume">
+        &emsp; &emsp;
+        &emsp; &emsp;
+        &emsp; &emsp;
+        &emsp; &emsp;
+
+        <button type="button" id="prev-button">Previous</button>
+     
+        &emsp;
+            
+            <button type="button" id="next-button">Next</button> 
+          <br>
+          <br>
+            <div class="resume-template">
+               <header>
+                    <br> 
+                    <div class="basics" id="candidate-name">John Doe</div><div>
+                    <img src="noun-profile-icon-638636.svg"></div><br>
+                    <div class="basics" id ="candidate-position">Applied For:SoftwareEngineer</div>
+                </header>
+                <div class="side-box">
+                    <div class="personal-info" id="candidate-info">
+                        <h3 style="background-color: darkgray">Personal Information</h3>
+                        <div class="personal-basics">
+                            <p id="phone" ><span>9999999999</span></p>
+                            <p id="email" ><span>john@gmail.com</span></p>
+                            <p id="linkedin"><span><a href="https://linkedin.com/john">Linkedin</a></span></p>                        
+                        </div>
+                    </div><!--close of personal-info-->
+                    <div class="technical-info" >
+                        <h3 style="background-color: darkgray; text-align: center;">Technical Skills</h3>
+                        <div class="skills" id="technical"></div>
+                    </div><!--close of technical-info-->
+                    <div class="hobbies-info">
+                            <h3 style="background-color: darkgray; text-align: center;">Hobbies</h3>
+                            <div class="hobbies" id="hobby"></div>
+                    </div><!--close of hobbies-info-->
+                </div><!--close of side-box-->
+           
+                <div class="right-section">
+                    <div class="work-info">
+                        <h3>Work Experience in Previous Company</h3>
+                        <div >
+                            <p ><strong>Company Name: </strong><span id="company-info">Harman</span></p>
+                            <p ><strong>Position: </strong><span id="position-info">Associate Engineer</span></p>
+                            <p ><strong>Start Date: </strong><span id="start-date">2013-01-01</span></p>
+                            <p ><strong>End Date: </strong><span id="end-date">2014-01-01</span></p>
+                            <p id="summary-info"><strong>Summary: </strong><span id="summary-description" style="text-align:justify;">Associate engineer with development, testing verification and validation experience on Car UI display systems.Performed phone projection development of user stories and testing with infotainment system such as Android auto ,Car playAnalyzed requirements , created test plans, executed test cases for connectivity epic such as C-connect, F-connect.Good at analyzing DLT logs and analyzing the code refactor areas.</span></p>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Projects</h3>
+                        <div>
+                            <p id="project-description">Diabetic Retinopaty: created a GUI using QT designer which will take image of retina as input, input image will be processed and compare with the images present in database and then classified as one of DR stage or normal.OpenCV and image processing concepts are used. survey paper on this project is publish in 2nd international conference on Topical Transcend in Science, Technology & Management.</p>
+                        </div>
+                    </div>
+                    <div class="education-info">
+                        <h3>Education</h3>
+                        <div>
+                            <ul>
+                                <li><strong>UG :</strong><span id="education-ug">Sai Vidya Institute of Technology</span></li>
+                                <li><strong>PU :</strong><span id="education-sc">Sai Vidya Institute of Technology</span></li>
+                                <li><strong>High School :</strong><span id="education-hs">Sai Vidya Institute of Technology</span></li>
+                            </ul>    
+                        </div>
+                    </div>
+                    <div class="intern-info">
+                        <h3>Internship</h3>
+                        <div >
+                            <ul>
+                                <li><strong>Company Name: </strong><span id="intern-company">IBM</span></li>
+                                <li><strong>Position: </strong><span id="intern-position">Intern</span></li>
+                                <li><strong>Start Date: </strong><span id="intern-start-date">2013-01-01</span></li>
+                                <li><strong>End Date: </strong><span id="intern-end-date">2014-01-01</span></li>
+                                <li><strong>Summary:</strong><span id="intern-summary-description">Learned about Tools used for website testing such as Deep Trawl, NVDA, web developer extension, OpenVAS,Learned about the importance and concept of OWASP.Learned React JS and worked for Frontend development with professional.</span></li>
+                            </ul>    
+                        </div>
+                    </div>
+                    <div class="achievement-info">
+                        <h3>Achievements</h3>
+                        <div >
+                            <ul>
+                                <li id="achievement-info" style="text-align:justify;">Attended 5 days industry orientation workshop organized by free software movement</li>
+                            </ul>    
+                        </div>
+                    </div>   
+                </div><!--close of right-section-->
+            </div><!--close of resume template-->
+    </center>
+    
+</body>
+
+<script type="module" src="resume.js"></script>
+</html>
